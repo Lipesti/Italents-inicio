@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <title>Home</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, 'Arial', 'sans-serif';
+            }
+
+            body {
+                overflow-x: hidden !important;
+                background: rgb(211, 210, 210);
+                margin-top: -20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+            ul li{
+                list-style: none;
+            }
+
+            .geo {
+                position: relative;
+                padding-left: 54px;
+                bottom: 36px;
+                color: rgb(230, 49, 49);
+            }
+
+            .local {
+                position: relative;
+                padding-left: 36px;
+                bottom: 32px;
+                font-weight: bold;
+            }
+
+            .nome-empresa {
+                position: relative;
+                width: 60%;
+                text-align: center;
+                padding-bottom: 15px;
+                margin-left: 36%;
+                bottom: 110px;
+            }
+
+            .nome {
+                color: #fff;
+                width: 28%;
+                padding-left: 50px;
+                background: #3b5998;
+                text-align: center;
+                padding-right: 42px;
+                border-radius: 18px;
+                padding-bottom: 5px;
+                letter-spacing: 3px;
+            }
+
+            .search {
+                position: relative;
+                top: 2px;
+                right: 295px;
+                margin-left: 600px;
+                font-size: 20px;
+                float: inline-start;
+            }
+
+
+            .container {
+                width: 100%;
+                background: rgb(211, 210, 210);
+                position: relative;
+                top: 40px;
+                
+            }
+
+            #saudacao {
+                margin-top: 5px;
+                position: relative;
+                left: 10px;
+                bottom: 50px;
+            
+            }
+
+            #saudacao h4 {
+                margin-top: 10px;
+                padding-left: 50px;
+            }
+
+            #pedido {
+                position: relative;
+                width: 290px;
+                height: 35px;
+                font-size: 1em;
+                background: rgb(245, 245, 245);
+                margin-top: 2px;
+                border-radius: 20px;
+                right: 615px;
+                bottom: 2px;
+                float: inline-start;
+            }
+
+            #head-home{
+                margin-top: 20px;
+                margin-bottom: 30px;
+                padding-top: 20px;
+                padding-left: 30px;
+                background: #fff;
+
+            }
+
+            #icons span{
+              font-size: 30px;  
+            }
+            
+            #categoria li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: rgb(82, 82, 82); 
+                font-size: 1.2em;
+                letter-spacing: 0.1em;
+            }
+
+            #cate li {
+                margin-bottom: 4px;
+                padding-bottom: 20px;
+                margin-left: 30px;
+                
+            }
+
+            #cate ul li a {
+                margin-top: 900px;
+                
+            }
+
+            #cate ul a:hover {
+                color: #fff;
+                background: #3b5998;
+                border-radius: 5px;
+            }
+
+            #cate1 {
+                width: 200px;
+                background: #F2F2F2;
+                position: relative;
+                top: 10px;
+                margin-left: 12px;
+                border-radius: 10px;
+                padding-top: 15px;
+                padding-left: 30px;
+                left: 24px;
+                
+            }
+
+            img {
+                border-radius: 1000%;
+                padding-left: 20px;
+            }
+
+            #food1 {
+                position: relative;
+                left: 400px;
+                bottom: 150px;
+                
+            }
+
+            #food2 {
+                position: relative;
+                left: 560px;
+                bottom: 303px;
+                
+            }
+
+            #food3 {
+                position: relative;
+                bottom: 455px;
+                left: 720px;
+            }
+
+            #food4 {
+                position: relative;
+                bottom: 608px;
+                left: 880px;
+            }
+
+            #food4 h3 {
+                position: relative;
+                right: 18px;
+            }
+
+            #food1, #food2, #food3, #food4 {
+                border: 1px solid #3b5998;
+                width: 150px;
+                background: #F2F2F2;
+            }
+
+            #veja {
+                position: relative;
+                bottom: 595px;
+                left: 35px;
+            }
+
+            #avalie {
+                position: relative;
+                bottom: 580px;
+                left: 420px;
+            }
+
+            #rodape li {
+                    display: inline-block;
+                    margin-left: 20px;
+                    font-size: 20px;
+                    padding-left: 55px;
+                
+            }
+
+            #rodape {
+                position: relative;
+                bottom: 400px;
+                left: 350px;
+                margin-bottom: 0px;
+            }
+
+            h3 {
+                margin-left: 30px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header id="head-home">
+                <nav id="nav-home">
+                    <ul id="icons">
+                        <li><span><i class="bi bi-menu-button-wide"></i></span></li>
+                        <div class="geo">
+                            <li><span><i class="bi bi-geo-alt-fill"></i></span></li>
+                        </div>
+
+                        <div class="local">
+                        <li><p>São Paulo</p></li>
+                        </div>
+
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <span>
+                    <div class="nome-empresa">
+                        <h1 class="nome">FaceBurguer</h1>
+                    </div>
+                    <div id="saudacao">
+                        <h2>Seja bem-vindo ao FaceBurguer!</h2>
+                        <h4>Vamos fazer seu pedido</h4>
+                    </div>
+                </span>
+                <section>
+                    <span class="search"><i class="bi bi-search"></i></span>
+                    <input id="pedido" type="text" placeholder=" Procure o seu pedido aqui">
+                </section>
+                
+                <section id="cate">
+                    <div id="cate1">
+                        <ul id="categoria">
+                            <li><a href="">Lanches</a></li>
+                            <li><a href="">Pizzas</a></li>
+                            <li><a href="">Pasteis</a></li>
+                            <li><a href="">Porções</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div id="food1">
+                        <img style="width: 120px; height: 125px" src="image/pexels-valeria-boltneva-1639557.jpg" alt="">
+                        <h3>X-Tudo</h3>
+                    </div>
+
+                    <div id="food2">
+                        <img style="width: 120px; height: 125px" src="image/pexels-kei-photo-2741457.jpg" alt="">
+                        <h3>Pizza</h3>
+                    </div>
+
+                    <div id="food3">
+                        <img style="width: 120px; height: 125px" src="image/pexels-natan-machado-fotografia-gastronômica-15010282.jpg" alt="">
+                        <h3>Pastel</h3>
+                    </div>
+
+                    <div id="food4">
+                        <img style="width: 120px; height: 125px" src="image/pexels-kei-photo-2741461.jpg" alt="">
+                        <h3>Batata Frita</h3>
+                    </div>
+            
+                    <div id="veja">
+                        <a id="mais" href="">Veja mais opções saborosas...</a> <span><i class="bi bi-arrow-right-square"></i></span> 
+            
+                    </div>
+                </section>
+                <div id="avalie">
+                    <section>
+                        <p>AVALIE NOSSO APP</p>
+                        <i class="bi bi-hand-thumbs-up"></i>
+                        <i class="bi bi-hand-thumbs-down"></i>
+                        <span>Ganhe cupons de desconto com sua avaliação!</span>
+                    </section>
+                </div>
+                <footer>
+                    <div id="rodape">
+                        <ul>
+                                <li class="">
+                                    <a href=""><i class="bi bi-house-door"></i><p>Home</p> </a>
+                                </li>
+                        
+                                <li>
+                                    <a href=""><i class="bi bi-emoji-smile"></i><p>Perfil</p></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="bi bi-receipt-cutoff"></i><p>Cupons</p></a>
+                                </li>
+                        
+                                <li>
+                                    <a href=""><i class="bi bi-stickies"></i><p>Pedidos</p></a>
+                                </li>
+                        
+                        </ul>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
